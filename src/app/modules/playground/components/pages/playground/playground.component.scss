@@ -1,0 +1,22 @@
+.playground-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #617880;
+  user-select: none;
+}
+
+.playground-table {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+}
+
+.playground-answer {
+  color: #cccddc;
+  font-size: 50px;
+  margin-top: 50px;
+}

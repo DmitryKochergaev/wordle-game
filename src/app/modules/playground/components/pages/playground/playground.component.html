@@ -1,0 +1,12 @@
+<div class="playground-wrapper">
+  <form [formGroup]="form">
+    <div class="playground-table" formArrayName="cells">
+      <cell *ngFor="let control of cells.controls; let i = index" [formControlName]="i">
+      </cell>
+    </div>
+  </form>
+
+  <span class="playground-answer" *ngIf="isGameFinished">
+        {{ wordToGuess }}
+  </span>
+</div>
